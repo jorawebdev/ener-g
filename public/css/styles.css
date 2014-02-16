@@ -1,0 +1,82 @@
+body {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 15px;
+    /*padding-top: 60px;*/
+    /*padding-bottom: 40px;*/
+}
+
+.dropdown-menu {
+    max-height: 400px;
+    overflow: auto;
+    width: 230px;
+}
+
+.list-item {
+    padding-top: 6px;
+    padding-left: 56px;
+}
+
+.no-reports {
+    display: none;
+}
+
+#list{font-size: 10px;}
+#list li{line-height: 10px;list-style: none;}
+.tool-tip{position: absolute; z-index: 10; visibility: hidden;color: steelblue; font-size: 12px;}
+
+path {
+    stroke-width: 1;
+    fill: none;
+}
+
+.data1 {
+    stroke: steelblue;
+}
+
+.data2 {
+    stroke: #f03;
+}
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.x.axis line {
+  stroke: lightgrey;
+}
+
+.x.axis .minor {
+  stroke-opacity: .5;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.x.axis text {
+    font-size: 10px;
+}
+
+.y.axis line, .y.axis path {
+  fill: none;
+  stroke: #000;
+}
+.y1.label,
+.y2.label{
+    fill:#ccc;
+    font-size: 15px;
+    font-weight: normal;
+}
+.y.axis text {
+    font-size: 10px;
+}
+
+.y.axisRight text {
+    fill: #f03;
+}
+
+.y.axisLeft text {
+    fill: steelblue;
+}
+
+footer p{font-size: 10px;color:#ccc;}

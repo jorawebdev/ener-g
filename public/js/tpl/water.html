@@ -1,0 +1,53 @@
+<div class="span4 chart well">
+	<h5>Water Consumption Data:</h5>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Units</th>
+				<th>Charge</th>
+				<th>Rate</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><b>Min</b></td>
+				<td>{{rateData.minU}}</td>
+				<td>${{rateData.minC}}</td>
+				<td>${{rateData.minR}}</td>
+			</tr>
+			<tr>
+				<td><b>Max</b></td>
+				<td>{{rateData.maxU}}</td>
+				<td>${{rateData.maxC}}</td>
+				<td>${{rateData.maxR}}</td>
+			</tr>
+		</tbody>
+	</table>
+	<ul>
+	{{#each mydata}}
+		<li>
+			<ul>
+				<li>date: {{this.date}}</li>
+				<li>current: {{this.current}}</li>
+				<li>usage: {{this.usage}}</li>
+				<li>payment: {{this.payment}}</li>
+			</ul>
+		</li>
+	{{/each}}
+	</ul>
+</div>
+<div class="span8" id="chartTabs">
+	<ul class="nav nav-tabs">
+	  <li class="active"><a href="#tabA" data-toggle="tab">1</a></li>
+	  <li><a href="#tabB" data-toggle="tab">2</a></li>
+	  <li><a href="#tabC" data-toggle="tab">3</a></li>
+	  <li><a href="#tabD" data-toggle="tab">4</a></li>
+	</ul>
+	<div class="tab-content">
+	  <div class="tab-pane active" id="tabA"><div id="chart"></div></div>
+	  <div class="tab-pane" id="tabB">...</div>
+	  <div class="tab-pane" id="tabC">...</div>
+	  <div class="tab-pane" id="tabD">...</div>
+	</div>
+</div>
